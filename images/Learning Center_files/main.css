@@ -253,17 +253,15 @@ header i {
   height: auto;
   position: relative;
 }
-
 .most-popular-info {
   margin: 40px 20px 20px 10px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  
 }
 
 .most-popular-selection {
-  width: 725px;
+  width: 1000px;
 }
 
 .most-popular-info i {
