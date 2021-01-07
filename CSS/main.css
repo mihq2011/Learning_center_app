@@ -158,15 +158,15 @@ button.login {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* HOME PAGE CSS */
@@ -250,9 +250,12 @@ header i {
 
 .most-popular-section {
   width: 100%;
-  height: auto;
+  height: 340px;
   position: relative;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
 }
+
 
 .most-popular-info {
   margin: 40px 20px 20px 10px;
@@ -293,5 +296,79 @@ header i {
   padding: 15px 2px;
   z-index: 0;
   font-weight: bold;
-  
+  overflow: initial;
+  line-height: 20px;
+}
+
+.popular-selection-card .description .fas {
+  background-color: white;
+  color: #37333F;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: -20px;
+  left: 60px;
+}
+
+.popular-selection-card .description h3 {
+  padding: 8px 0px;
+}
+
+/* AUDIO SECTION 
+.audio-section .menu{
+  padding: 0;
+  margin: 0;
+}
+
+.audio-section .menu li.pill-title {
+  width: 90%;
+  height: 60px;
+  color: #37333F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cfcfcf;
+  font-weight: bold;
+  margin: 10px 0px 10px 15px;
+  border-radius: 20px;
+  padding: 0 10px 0 20px;
+  position: relative;
+  list-style: none;
+}
+
+.audio-section li .fas {
+  font-size: 1.4rem;
+}
+
+.pill-list {
+  position: absolute;
+}
+*/
+
+.container {
+overflow: initial;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 0;
+  position: relative;
+}
+
+.menu li ul {
+  position: absolute;
+  display: block;
+}
+
+.menu li ul li {
+  display: block;
 }
