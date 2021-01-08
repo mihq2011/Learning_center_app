@@ -314,38 +314,6 @@ header i {
   padding: 8px 0px;
 }
 
-/* AUDIO SECTION 
-.audio-section .menu{
-  padding: 0;
-  margin: 0;
-}
-
-.audio-section .menu li.pill-title {
-  width: 90%;
-  height: 60px;
-  color: #37333F;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #cfcfcf;
-  font-weight: bold;
-  margin: 10px 0px 10px 15px;
-  border-radius: 20px;
-  padding: 0 10px 0 20px;
-  position: relative;
-  list-style: none;
-}
-
-.audio-section li .fas {
-  font-size: 1.4rem;
-}
-
-.pill-list {
-  position: absolute;
-}
-*/
-
-
 .menu {
   padding: 0px;
   margin: 0;
@@ -361,32 +329,68 @@ header i {
   border: #9c9c9c solid 0.2px;
 }
 
- .list1 h3 {
+.list1 h3 {
   margin-left: 10px;
   padding-bottom: 20px;
 }
 
- .list1 h3, i {
+.list1 h3, i {
   display: inline-block;
 }
 
- .list1 .fas {
+.list1 i:active {
+  transform: rotate(90deg);
+}
+
+.list1 .fas {
   float: right;
   font-size: 1.4rem;
   margin-right: 10px;
 }
-
- .list1 .submenu-list-1 {
+/* list functionality */
+.list1 .submenu-list-1 {
   display: ;
 }
 
- .list1 .submenu-list-1 li {
+.list1 .submenu-list-1 li {
   background-color: rgb(233, 232, 232);
   padding: 20px 0 25px 10px;
   
 }
 
+.list1 .submenu-list-1 i {
+  float: right;
+  margin-right: 30px;
+  font-size: 1.5rem;
+}
+
  .list1 .submenu-list-1 li:hover {
   background-color: #d4d3d3;
+  
+}
+/*  */
+footer {
+  background-color: #343A40;
+  color: white;
+  text-align: left;
+  display: inherit;
+}
+
+footer ul {
+  display: inline-block;
+  margin: 20px 15px;
+  text-align: left;
+  vertical-align: top;
+}
+
+footer ul h2 {
+  padding: 0 0 10px 0;
+  color: #7c7c7c;
+}
+
+footer ul li {
+  display: block;
+  padding: 7px 0px;
+  color: #ececec;
   
 }
