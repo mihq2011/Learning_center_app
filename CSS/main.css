@@ -22,7 +22,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
   vertical-align: baseline;
-  overflow-y: scroll;
 }
 
 a {
@@ -346,29 +345,48 @@ header i {
 }
 */
 
-.container {
-overflow: initial;
-}
 
 .menu {
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  display: inline-block;
-  list-style: none;
-  padding: 20px;
-  border: 1px solid black;
+  padding: 0px;
   margin: 0;
   position: relative;
 }
 
-.menu li ul {
-  position: absolute;
-  display: block;
+.menu .list1 {
+  width: 100%;
+  font-weight: bold;
+  background-color: #d4d3d3;
+  display: relative;
+  padding: 20px 0px 0px 0px;
+  border: #9c9c9c solid 0.2px;
 }
 
-.menu li ul li {
-  display: block;
+ .list1 h3 {
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+ .list1 h3, i {
+  display: inline-block;
+}
+
+ .list1 .fas {
+  float: right;
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+ .list1 .submenu-list-1 {
+  display: ;
+}
+
+ .list1 .submenu-list-1 li {
+  background-color: rgb(233, 232, 232);
+  padding: 20px 0 25px 10px;
+  
+}
+
+ .list1 .submenu-list-1 li:hover {
+  background-color: #d4d3d3;
+  
 }
