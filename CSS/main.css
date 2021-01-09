@@ -170,7 +170,6 @@ h3 {
 
 /* HOME PAGE CSS */
 header {
-  display: none;
   width: 100%;
   background: linear-gradient(-120deg, #496bca, #0575E6, #3e71a5);
 }
@@ -213,26 +212,27 @@ header i {
 }
 
 .top-card {
-  background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
-  width: 95%;
-  height: auto;
-  border-radius: 10px;
-  color: white;
+  width: 100%;
+  
 }
 
 .top-card-info {
   margin: 0px 0px 0px 10px;
-  width: 90%;
+  background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
+  height: auto;
+  border-radius: 10px;
+  color: white;
+  width: 95%;
 }
 
 .top-card-info h1 {
   font-weight: bold;
-  padding: 20px 0 10px;
+  padding: 20px;
 }
 
 .top-card-info p {
   font-size: 1.1rem;
-  padding: 0px 30px 40px 0px;
+  padding: 0px 30px 40px 20px;
   line-height: 20px;
 }
 
@@ -247,14 +247,43 @@ header i {
   border: none;
 }
 
+.top-card-info-right {
+  display: none;
+  text-align: left;
+  width: 47%;
+  height: auto;
+}
+
 .most-popular-section {
   width: 100%;
-  height: 340px;
+  height: auto;
   position: relative;
   overflow-y: scroll;
   -ms-overflow-style: none;
 }
+.info-right-container {
+  width: 80%;
+  margin: 10px 0px 20px 10px;
+}
 
+.info-right-container h2 {
+  padding: 20px 0;
+  position: relative;
+}
+
+.info-right-container h2::after {
+  bottom: 10px; 
+  left: 0;
+  width: 60px;
+  background:#0575E6;
+  position: absolute;
+  content: '';
+  height: 5px;
+}
+
+.info-right-container p {
+  font-size: 1.3rem;
+}
 
 .most-popular-info {
   margin: 40px 20px 20px 10px;
@@ -265,7 +294,7 @@ header i {
 }
 
 .most-popular-selection {
-  width: 725px;
+  width: 1250px;
 }
 
 .most-popular-info i {
@@ -275,13 +304,29 @@ header i {
 
 .most-popular-section .popular-selection-card {
   width: 160px;
-  height: 300px;
-  border-radius: 20px;
+  height: 290px;
   margin: 0px 7px;
   text-align: center;
   position: relative;
   float: left;
   
+}
+
+.most-popular-section .popular-selection-card .fa-plus-circle {
+  margin: 105px 0;
+  font-size: 3rem;
+  align-items: center;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.most-popular-section .popular-selection-card span {
+  position: absolute;
+  bottom: 90px;
+  left: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0.6;
 }
 
 .most-popular-section .popular-selection-card .description {
@@ -290,13 +335,12 @@ header i {
   color: white;
   background-color: rgb(77, 77, 77);
   opacity: 0.9;
-  z-index: 1;
-  border-radius: 20px;
   padding: 15px 2px;
   z-index: 0;
   font-weight: bold;
   overflow: initial;
   line-height: 20px;
+  display: none;
 }
 
 .popular-selection-card .description .fas {
@@ -349,7 +393,7 @@ header i {
 }
 /* list functionality */
 .list1 .submenu-list-1 {
-  display: ;
+  display: none;
 }
 
 .list1 .submenu-list-1 li {
@@ -365,10 +409,10 @@ header i {
 }
 
  .list1 .submenu-list-1 li:hover {
-  background-color: #d4d3d3;
-  
+  background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
+  color: white;
 }
-/*  */
+/* FOOTER */
 footer {
   background-color: #343A40;
   color: white;
@@ -378,7 +422,7 @@ footer {
 
 footer ul {
   display: inline-block;
-  margin: 20px 15px;
+  margin: 25px 15px 0px 10px;
   text-align: left;
   vertical-align: top;
 }
@@ -393,4 +437,28 @@ footer ul li {
   padding: 7px 0px;
   color: #ececec;
   
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 700px) {
+  .top-card-info {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .top-card-info-right {
+    display: inline-block;
+  }
+
+  footer {
+    background-color: #343A40;
+    color: white;
+    display: flex;
+    text-align: center;
+    display: inherit;
+  }
+
+  footer ul {
+    margin: 30px 60px 50px 60px;
+  }
 }
