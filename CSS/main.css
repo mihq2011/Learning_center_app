@@ -168,10 +168,13 @@ h3 {
   font-size: 1.2rem;
 }
 
-/* HOME PAGE CSS */
+/* Header and menu */
 header {
   width: 100%;
   background: linear-gradient(-120deg, #496bca, #0575E6, #3e71a5);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
 nav {
@@ -192,6 +195,42 @@ header i {
 .logo {
   cursor: pointer;
 }
+
+.side-menu {
+  width: 50%;
+  height: 100vh;
+  background-color: #E9E8E8;
+  right: 0;
+  position: fixed;
+  z-index: 9998;
+  top: 70px;
+  box-shadow: 0px 0px 0px 2px rgb(193, 193, 193);
+/*display:none;*/
+}
+
+.side-menu .logo {
+  margin: 15px auto 20px;
+  display: flex;
+  width: 170px;
+  height: 130px;
+}
+
+.side-menu ul {
+  text-align: center;
+}
+
+.side-menu ul li {
+  padding: 20px 0;
+  font-size: 1.2rem;
+  transition: background .3s ease-in-out;
+}
+
+.side-menu ul li:hover {
+  background: #0575E6;
+  color: white;
+}
+
+/* HOME PAGE CSS */
 
 .home-page-container {
   max-width: 1200px;
@@ -246,6 +285,7 @@ header i {
   border-radius: 50px;
   border: none;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  cursor: pointer;
 }
 
 .top-card-info-right {
@@ -399,7 +439,7 @@ header i {
 }
 /* list functionality */
 .list1 .submenu-list-1 {
-  display: none;
+  display: ;
 }
 
 .list1 .submenu-list-1 li {
@@ -442,11 +482,19 @@ footer ul li {
   display: block;
   padding: 7px 0px;
   color: #ececec;
-  
+  transition: color .2s ease-in-out;
+}
+
+footer ul li:hover {
+  color: #0575E6;
 }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 700px) {
+  .side-menu {
+    width: 25%;
+  }
+
   .top-card-info {
     width: 50%;
     display: inline-block;
