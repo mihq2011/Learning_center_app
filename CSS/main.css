@@ -134,12 +134,6 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-::placeholder {
-  color: rgb(216, 216, 216);
-  font-size: 1.4rem;
-}
-
-
 button.login {
   display: block;
   margin: 20px auto 30px auto;
@@ -205,7 +199,7 @@ header i {
   z-index: 9998;
   top: 70px;
   box-shadow: 0px 0px 0px 2px rgb(193, 193, 193);
-/*display:none;*/
+  display:none;
 }
 
 .side-menu .logo {
@@ -488,6 +482,37 @@ footer ul li {
 footer ul li:hover {
   color: #0575E6;
 }
+
+/* Header for Contact Page */
+header.contact-page-header {
+  height: 280px;
+  background-image:
+  linear-gradient(to bottom, rgba(73, 107, 202, 0.7), rgba(5, 117, 230, 0.9)),
+  url('/images/signinbg.jpg');
+}
+
+header.contact-page-header .header-text {
+text-align: center;
+color: white;
+}
+
+header.contact-page-header .header-text h1 {
+font-weight: bold;
+margin: 30px 0 10px 0;
+font-size: 2.6rem;
+letter-spacing: 2px;
+}
+
+header.contact-page-header .header-text h3 {
+font-size: 2rem;
+padding: 0 5px;
+}
+
+/* CONTACT PAGE */
+.contact-page-container {
+  margin: 20px 100px;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 700px) {
