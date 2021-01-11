@@ -112,7 +112,7 @@ form .container i {
   display: inline;
 }
 
-input[type=text], input[type=password] {
+.signin-page input[type=text], input[type=password] {
   display: inline-block;
   width: 90%;
   height: 3.5em;
@@ -510,7 +510,84 @@ padding: 0 5px;
 
 /* CONTACT PAGE */
 .contact-page-container {
-  margin: 20px 100px;
+  margin: 300px auto 0px auto;
+  
+}
+
+.contact-page-container .form-left {
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+.contact-page-container .contact label[for=message], input[id=message] {
+  display: block;
+  width: 100%;
+}
+
+.contact-page-container .contact label {
+  width: 100%;
+  width: block;
+}
+
+.contact-page-container .contact input {
+  margin-top: 10px;
+  width: 100%;
+  width: block;
+  padding-left: 10px;
+  border: none;
+  background-color: #bdc1c9;
+  height: 35px;
+}
+
+.contact-page-container .contact .contact-message {
+  height: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  background-color: #bdc1c9;
+}
+
+.contact-page-container .contact input[type="submit"] {
+  height: 40px;
+  color: white;
+  background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
+  
+}
+
+.contact-page-container .contact input[type="checkbox"] {
+  width: 18px;
+  vertical-align: middle;
+}
+
+.contact-page-container .right-map {
+  width: 100%;
+  display: block;
+  margin: 10px 0 50px;
+}
+
+.contact-page-container .right-map iframe {
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+.contact-page-container .right-map p {
+  margin: 0px 0px 8px 10px;
+  
+}
+
+.contact-page-container .right-map p a {
+  color:#496bca;
+}
+
+/* BOOKS PAGE */
+.books-page-container {
+  margin: 90px 10px 0px;
+  
 }
 
 
@@ -523,6 +600,28 @@ padding: 0 5px;
   .top-card-info {
     width: 50%;
     display: inline-block;
+  }
+  .contact-page-container {
+    margin: 300px 10% 0px;
+    
+  }
+
+  .contact-page-container .form-left {
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 49%;
+    display: inline-block;
+  }
+
+  .contact-page-container .right-map {
+    width: 50%;
+    display: inline-block;
+    margin: 10px 0 50px;
+  }
+
+  .contact-page-container .right-map iframe {
+    height: 420px;
+    
   }
 
   .top-card-info-right {
@@ -537,6 +636,7 @@ padding: 0 5px;
   .most-popular-selection {
     width: 1500px;
 }
+
 
   footer {
     background-color: #343A40;
