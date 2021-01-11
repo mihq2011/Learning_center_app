@@ -586,8 +586,24 @@ padding: 0 5px;
 
 /* BOOKS PAGE */
 .books-page-container {
-  margin: 90px 10px 0px;
+  margin: 90px 0px 50px 0px;
   
+}
+
+.book-card-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 3.5px;
+  
+}
+
+.book-card-container .book-card {
+  background-image: url(/images/petersonjor.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 154px;
 }
 
 
