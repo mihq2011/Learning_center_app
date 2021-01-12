@@ -3,7 +3,16 @@
    License: none (public domain)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+  --dark-text: #7c7c7c;
+  --light-text: #DADADA;
+  --dark-bg: #343A40;
+  --light-bg: #dddddd;
+  --hover-bg: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
+  --blue-fill: #0575E6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,8 +54,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #c5c5c5;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -65,12 +78,6 @@ table {
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  color: #37333F;
 }
 
 /* CSS FOR SIGN IN */
@@ -151,21 +158,21 @@ button.login {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 /* Header and menu */
 header {
   width: 100%;
-  background: linear-gradient(-120deg, #496bca, #0575E6, #3e71a5);
+  background: var(--light-bg);
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -182,7 +189,7 @@ nav {
 
 header i {
   font-size: 1.7rem;
-  color: white;
+  color: var(--blue-fill);
   padding-right: 20px;
 }
 
@@ -232,7 +239,9 @@ header i {
 }
 
 .intro {
-  margin: 20px 10px 30px;
+  margin: 75px 0px 7px;
+  background-color: var(--light-bg);
+  padding: 20px 0 20px 20px;
 }
 
 .intro h1 {
@@ -254,7 +263,7 @@ header i {
   background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
   height: auto;
   border-radius: 10px;
-  color: white;
+  color: var(--light-text);
   width: 95%;
 }
 
@@ -275,7 +284,8 @@ header i {
   height: 70px;
   font-size: 1.2rem;
   font-weight: bold;
-  background: rgb(233, 232, 232);
+  background: var(--light-text);
+  color: var(--dark-text);
   border-radius: 50px;
   border: none;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -295,6 +305,8 @@ header i {
   position: relative;
   overflow-y: scroll;
   -ms-overflow-style: none;
+  background-color: var(--light-bg);
+  
 }
 .info-right-container {
   width: 80%;
@@ -321,20 +333,23 @@ header i {
 }
 
 .most-popular-info {
-  margin: 40px 20px 20px 10px;
+  margin: 7px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  
+  background-color: var(--light-bg);
+  padding: 20px 0px 20px 10px;
 }
 
 .most-popular-selection {
   width: 1250px;
 }
 
-.most-popular-info i {
-  font-size: 1.5rem;
+.most-popular-info a, i {
+  font-size: 1rem;
   font-weight: bold;
+  color: var(--blue-fill);
+  padding-right: 10px;
 }
 
 .most-popular-section .popular-selection-card {
@@ -385,7 +400,7 @@ header i {
 
 .popular-selection-card .description .fas {
   background-color: white;
-  color: #37333F;
+  color: var(--dark-text);
   font-size: 1.7rem;
   border-radius: 50%;
   padding: 5px;
@@ -394,7 +409,7 @@ header i {
   left: 60px;
 }
 
-.popular-selection-card .description h3 {
+.popular-selection-card .description h2 {
   padding: 8px 0px;
 }
 
@@ -407,7 +422,7 @@ header i {
 .menu .list1 {
   width: 100%;
   font-weight: bold;
-  background-color: #d4d3d3;
+  background-color: var(--light-bg);
   display: relative;
   padding: 20px 0px 0px 0px;
   border: #9c9c9c solid 0.2px;
@@ -433,11 +448,11 @@ header i {
 }
 /* list functionality */
 .list1 .submenu-list-1 {
-  display: ;
+  display: none;
 }
 
 .list1 .submenu-list-1 li {
-  background-color: rgb(233, 232, 232);
+  background-color: var(--light-bg);
   padding: 20px 0 25px 10px;
   
 }
@@ -449,15 +464,15 @@ header i {
 }
 
  .list1 .submenu-list-1 li:hover {
-  background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
-  color: white;
+  background: var(--hover-bg);
+  color: var(--light-text);
 }
 /* FOOTER */
 footer {
-  background-color: #343A40;
-  color: white;
+  background-color: var(--dark-bg);
   text-align: left;
   display: inherit;
+  padding-bottom: 50px;
 }
 
 footer ul {
@@ -469,18 +484,18 @@ footer ul {
 
 footer ul h2 {
   padding: 0 0 10px 0;
-  color: #7c7c7c;
+  color: var(--dark-text);
 }
 
 footer ul li {
   display: block;
   padding: 7px 0px;
-  color: #ececec;
+  color: var(--light-text);
   transition: color .2s ease-in-out;
 }
 
 footer ul li:hover {
-  color: #0575E6;
+  color: var(--blue-fill);
 }
 
 /* Header for Contact Page */
