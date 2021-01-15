@@ -259,7 +259,7 @@ header i {
 }
 
 .top-card-info {
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 8px 0px;
   background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
   height: auto;
   border-radius: 10px;
@@ -306,6 +306,7 @@ header i {
   overflow-y: scroll;
   -ms-overflow-style: none;
   background-color: var(--light-bg);
+  margin-bottom: 8px;
   
 }
 .info-right-container {
@@ -333,7 +334,7 @@ header i {
 }
 
 .most-popular-info {
-  margin: 7px 0px 0px 0px;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
@@ -343,9 +344,10 @@ header i {
 
 .most-popular-selection {
   width: 1250px;
+  
 }
 
-.most-popular-info a, i {
+.most-popular-info a {
   font-size: 1rem;
   font-weight: bold;
   color: var(--blue-fill);
@@ -357,9 +359,7 @@ header i {
   height: 290px;
   margin: 0px 7px;
   text-align: center;
-  position: relative;
   float: left;
-  
 }
 
 .most-popular-section .popular-selection-card .fa-plus-circle {
@@ -380,15 +380,12 @@ header i {
 }
 
 .most-popular-section .popular-selection-card .description {
-  bottom: 0;
-  position: absolute;
+  
   color: white;
   background-color: rgb(77, 77, 77);
   opacity: 0.9;
   padding: 15px 10px;
-  z-index: 0;
   font-weight: bold;
-  overflow: initial;
   line-height: 20px;
   display: none;
 }
