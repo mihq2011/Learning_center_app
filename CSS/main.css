@@ -332,6 +332,15 @@ header i {
   padding: 20px 0px 20px 10px;
 }
 
+.most-popular-info h2::after {
+  content: "";
+  width: 50px;
+  border-bottom: 5px solid var(--blue-fill);
+  display: table-cell;
+  padding-top: 16px;
+  position: absolute;
+}
+
 .most-popular-info a {
   font-size: 1rem;
   font-weight: bold;
@@ -351,8 +360,8 @@ header i {
 }
 
 .most-popular-section .popular-selection-card {
-  width: 160px;
-  height: 280px;
+  width: 230px;
+  height: 350px;
   text-align: center;
   box-shadow: 5px 5px 0px rgb(173, 173, 173);
   margin-right: 10px;
@@ -360,6 +369,7 @@ header i {
 
 .most-popular-section .description {
   font-weight: bold;
+  
 }
 
 .most-popular-section .description p {
@@ -379,6 +389,37 @@ header i {
   padding-top: 5px;
 }
 
+.author-container {
+  margin: 20px 7px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.author-container .author-card {
+  display: inline-block;
+  width: 280px;
+  border-radius: 10px;
+  background: white;
+  margin: 0 10px 0 0;
+}
+
+.author-container .author-card img {
+  float: left;
+  border-radius: 50px;
+  width: 120px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.author-container .author-card .author-info{
+  padding-top: 35px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.author-container .author-card .author-info p {
+  color: #797979;
+}
 
 .menu {
   padding: 0px;
