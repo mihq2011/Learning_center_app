@@ -4,12 +4,13 @@
 */
 
 :root {
-  --dark-text: #7c7c7c;
+  --dark-text: #474747;
   --light-text: #DADADA;
   --dark-bg: #343A40;
-  --light-bg: #dddddd;
+  --light-bg: #f0f0f0;
   --hover-bg: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
   --blue-fill: #0575E6;
+  --light-grey: #797979;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
@@ -57,7 +58,7 @@ body {
   line-height: 1;
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #c5c5c5;
+  background-color: var(--light-text);
 }
 
 ol, ul {
@@ -198,15 +199,19 @@ header i {
 }
 
 .side-menu {
-  width: 50%;
+  width: 75%;
   height: 100vh;
   background-color: #E9E8E8;
-  right: 0;
+  right: -280px;
   position: fixed;
   z-index: 9998;
   top: 70px;
   box-shadow: 0px 0px 0px 2px rgb(193, 193, 193);
-  display:none;
+  transition: all .3s ease-in-out;
+}
+
+.side-menu.active {
+  right: 0;
 }
 
 .side-menu .logo {
@@ -242,6 +247,7 @@ header i {
   margin: 75px 0px 7px;
   background-color: var(--light-bg);
   padding: 20px 0 20px 20px;
+  color: var(--dark-text);
 }
 
 .intro h1 {
@@ -330,6 +336,7 @@ header i {
   font-weight: bold;
   background-color: var(--light-bg);
   padding: 20px 0px 20px 10px;
+  color: var(--dark-text);
 }
 
 .most-popular-info h2::after {
@@ -363,17 +370,18 @@ header i {
   width: 230px;
   height: 350px;
   text-align: center;
-  box-shadow: 5px 5px 0px rgb(173, 173, 173);
+  box-shadow: 10px 10px 5px #aaaaaa;
   margin-right: 10px;
 }
 
 .most-popular-section .description {
   font-weight: bold;
+  color: var(--dark-text);
   
 }
 
 .most-popular-section .description p {
-  color: #797979;
+  color: var(--light-grey);
 }
 
 .most-popular-section .description i {
@@ -399,7 +407,7 @@ header i {
   display: inline-block;
   width: 280px;
   border-radius: 10px;
-  background: white;
+  background: var(--light-bg);
   margin: 0 10px 0 0;
 }
 
@@ -419,7 +427,7 @@ header i {
 }
 
 .author-container .author-card .author-info p {
-  color: #797979;
+  color: var(--light-grey);
 }
 
 .menu {
@@ -432,9 +440,14 @@ header i {
   width: 100%;
   font-weight: bold;
   background-color: var(--light-bg);
+  color: var(--dark-text);
   display: relative;
   padding: 20px 0px 0px 0px;
   border: #9c9c9c solid 0.2px;
+
+}
+.menu .list1 li {
+ border-top: var(--light-grey) solid 1px;
 }
 
 .list1 h3 {
@@ -457,7 +470,7 @@ header i {
 }
 /* list functionality */
 .list1 .submenu-list-1 {
-  display: none;
+  display: ;
 }
 
 .list1 .submenu-list-1 li {
@@ -493,13 +506,13 @@ footer ul {
 
 footer ul h2 {
   padding: 0 0 10px 0;
-  color: var(--dark-text);
+  color: var(--light-text);
 }
 
 footer ul li {
   display: block;
   padding: 7px 0px;
-  color: var(--light-text);
+  color: var(--light-grey);
   transition: color .2s ease-in-out;
 }
 
