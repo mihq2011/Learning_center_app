@@ -174,7 +174,6 @@ h3 {
 header {
   width: 100%;
   background: var(--light-bg);
-  position: fixed;
   top: 0;
   z-index: 9999;
 }
@@ -202,7 +201,7 @@ header i {
   width: 75%;
   height: 100vh;
   background-color: #E9E8E8;
-  right: -280px;
+  right: -290px;
   position: fixed;
   z-index: 9998;
   top: 70px;
@@ -545,9 +544,32 @@ font-size: 2rem;
 padding: 0 5px;
 }
 
+/* About PAGE */
+.about-title {
+  text-align: center;
+  margin: 30px 40px 10px;
+}
+
+.about-container {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-container i {
+  font-size: 2rem;
+  width: 3.5rem;
+  color: white;
+  background-color: black;
+}
+
+.service-card {
+  margin: 30px;
+}
+
 /* CONTACT PAGE */
 .contact-page-container {
-  margin: 300px auto 0px auto;
+  margin: 30px auto 0px auto;
   
 }
 
@@ -628,19 +650,18 @@ padding: 0 5px;
 }
 
 .book-card-container {
-  margin-top: 30px;
+  margin: 30px 10px 0 10px;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 0px;
-  grid-row-gap: 3.5px;
-  
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
 }
 
 .book-card-container .book-card {
   background-image: url(/images/petersonjor.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 154px;
+  height: 140px;
 }
 
 
