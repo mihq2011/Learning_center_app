@@ -603,16 +603,22 @@ font-size: 2rem;
 padding: 0 5px;
 }
 
-/* About PAGE */
+.service-card {
+  margin: 30px;
+}
+
+/* ABOUT PAGE */
 .about-title {
-  text-align: center;
   margin: 30px 40px 10px;
 }
 
 .about-container {
-  display: block;
-  justify-content: center;
-  text-align: center;
+  margin: 0 auto;
+}
+
+.about-container .about-title {
+  color: var(--dark-text);
+  font-weight: bold;
 }
 
 .about-container i {
@@ -622,8 +628,24 @@ padding: 0 5px;
   background-color: black;
 }
 
-.service-card {
-  margin: 30px;
+.about-block {
+  position: relative;
+}
+
+.about-block img {
+  width: 90%;
+  height: 50vh;
+  display: inline-block;
+}
+
+.about-block .about-info {
+  width: 70%;
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  right: 0px;
+  bottom: -100px;
+  padding: 20px;
 }
 
 /* CONTACT PAGE */
@@ -705,11 +727,11 @@ padding: 0 5px;
 /* BOOKS PAGE */
 .books-page-container {
   margin: 20px 0px 40px 10px;
-  
+  text-align: center;
 }
 
 .book-card-container {
-  margin: 30px 5px 0 0px;
+  margin: 20px 5px 0 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(200px, auto);
