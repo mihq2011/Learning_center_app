@@ -608,22 +608,32 @@ padding: 0 5px;
 }
 
 /* ABOUT PAGE */
-.page-container .about-title {
-  color: var(--dark-text);
-  font-weight: bold;
-  margin: 20px 10px;
-  width: 60%;
-}
-
 .about-block {
   background-image: url("/images/handbook.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 0.6;
-  filter: grayscale(50%);
   max-width: 100%;
-  height: 60vh;
+  height: 40vh;
+}
+
+.page-container .about-title-info {
+  color: var(--dark-text);
+  font-weight: bold;
+  margin: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.about-title-info button {
+  margin: 20px 0 0 0;
+  width: 150px;
+  height: 50px;
+  background: var(--blue-fill);
+  color: var(--light-text);
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 20px;
 }
 
 
@@ -737,7 +747,7 @@ padding: 0 5px;
     display: inline-block;
   }
   .contact-page-container {
-    margin: 300px 10% 0px;
+    margin: 50px 10% 0px;
     
   }
 
