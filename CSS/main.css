@@ -260,7 +260,7 @@ header i {
   width: 75%;
   height: 100vh;
   background-color: #E9E8E8;
-  right: -290px;
+  right: -700px;
   position: fixed;
   z-index: 9998;
   top: 72px;
@@ -296,7 +296,7 @@ header i {
 
 /* HOME PAGE CSS */
 
-.home-page-container {
+.page-container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -463,7 +463,7 @@ header i {
 
 .author-container .author-card {
   display: inline-block;
-  width: 280px;
+  width: 290px;
   border-radius: 10px;
   background: var(--light-bg);
   margin: 0 10px 0 0;
@@ -608,45 +608,24 @@ padding: 0 5px;
 }
 
 /* ABOUT PAGE */
-.about-title {
-  margin: 30px 40px 10px;
-}
-
-.about-container {
-  margin: 0 auto;
-}
-
-.about-container .about-title {
+.page-container .about-title {
   color: var(--dark-text);
   font-weight: bold;
-}
-
-.about-container i {
-  font-size: 2rem;
-  width: 3.5rem;
-  color: white;
-  background-color: black;
+  margin: 20px 10px;
+  width: 60%;
 }
 
 .about-block {
-  position: relative;
+  background-image: url("/images/handbook.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  filter: grayscale(50%);
+  max-width: 100%;
+  height: 60vh;
 }
 
-.about-block img {
-  width: 90%;
-  height: 50vh;
-  display: inline-block;
-}
-
-.about-block .about-info {
-  width: 70%;
-  position: absolute;
-  display: inline-block;
-  background-color: white;
-  right: 0px;
-  bottom: -100px;
-  padding: 20px;
-}
 
 /* CONTACT PAGE */
 .contact-page-container {
