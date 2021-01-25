@@ -2,6 +2,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
 
 :root {
   --dark-text: #474747;
@@ -11,9 +18,12 @@
   --hover-bg: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
   --blue-fill: #0575E6;
   --light-grey: #797979;
+  font-size: 16px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -244,12 +254,14 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 5px 0px;
+  
 }
 
 header i {
   font-size: 1.7rem;
   color: var(--blue-fill);
   margin-right: 20px;
+  
 }
 
 .logo {
@@ -724,8 +736,8 @@ padding: 0 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(200px, auto);
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+  grid-column-gap: 12.5px;
   
 }
 
