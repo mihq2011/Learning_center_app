@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 * {
   box-sizing: border-box;
 }
@@ -92,6 +93,22 @@ table {
 }
 
 /*KEYFFRAME ANIMATIONS */
+@keyframes drive {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateX(1300px);
+  }
+}
+
+@keyframes jump {
+  0%{top: -40;}
+  50%{top: -100px;}
+  100%{top: -40;}
+}
+
 @keyframes fadeInTop {
   0% {
     opacity:0;
@@ -122,6 +139,7 @@ table {
   100% {
     opacity: 1;
     transform: translate3d(0,0,0);
+    animation-duration: 3s;
   }
 }
 
@@ -323,6 +341,7 @@ header i {
 .intro h1 {
   font-weight: bold;
   padding-bottom: 5px;
+  
 }
 
 .intro h3 {
@@ -646,6 +665,7 @@ padding: 0 5px;
   font-size: 1.1rem;
   font-weight: bold;
   border-radius: 20px;
+  border: none;
 }
 
 
@@ -727,7 +747,14 @@ padding: 0 5px;
 
 /* BOOKS PAGE */
 .books-page-container {
-  margin: 20px 0px 40px 10px;
+  margin: 0px 0px 40px 10px;
+  text-align: center;
+  height: 100vh;
+  overflow: scroll;
+  padding-bottom: 225px;
+}
+
+.books-title {
   text-align: center;
 }
 
@@ -738,13 +765,94 @@ padding: 0 5px;
   grid-auto-rows: minmax(200px, auto);
   grid-row-gap: 25px;
   grid-column-gap: 12.5px;
-  
 }
 
 .book-card-container .book-card {
   background-size: contain;
   background-repeat: no-repeat;
   
+}
+
+.books-page-popup {
+  display: block;
+  width: 100vw;
+  height: auto;
+  background-color: var(--light-bg);
+  position: absolute;
+  right: -900px;
+  transition: all .7s ease-in;
+  overflow: scroll;
+}
+
+.books-page-popup.active {
+  right: 0;
+}
+
+.books-page-popup-top {
+  display: flex;
+  position: fixed;
+  background: var(--light-bg);
+  padding-bottom: 90px;
+}
+
+.book-popup  {
+  width: 40%;
+  position: relative;
+}
+
+.book-popup img {
+  position: absolute;
+  background-size: contain;
+  left: 10px;
+  top: 20px;
+  width: 115px;
+  height: 200px;
+  
+}
+
+.description-popup {
+  width: 60%;
+  margin: 15px 10px 0 0;
+  text-align: left;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.action-part {
+  float: right;
+  margin: 20px 10px 0 0;
+  position: absolute;
+}
+
+.action-part .buyNow {
+  width: 150px;
+  height: 45px;
+  border-radius: 20px;
+  background-color: var(--blue-fill);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+.action-part i {
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgb(255, 100, 100);
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.summary-popup {
+  background: white;
+  width: 100%;
+  height: 100vh;
+  line-height: 35px;
+  font-size: 1.3rem;
+  padding: 10px 10px 425px 10px;
+  overflow:auto;
+  margin-top: 225px;
 }
 
 
