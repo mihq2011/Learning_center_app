@@ -4,245 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Center</title>
+    <title>Airflow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
- 
-<header>
-    <nav class="nav-container">
-        <img class="logo" src="/images/logoowl.png" width="70px" height="60px" alt="logo">
+
+    <header>
+        <div class="header-container">
+          <div class="header-logo">
+            <a href="#">
+                <img width="80px" height="100%" src="https://i.postimg.cc/sfM5YWhv/logo.png" alt="">
+            </a>
+          </div>
+          <nav>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+            <a href=""><i class="fas fa-shopping-cart cart"></i></a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="top-jumbo">
+          <div class="top-jumbo__video-container">
+            <iframe class="top-jumbo__video" width="560" height="315" src="https://www.youtube.com/embed/jbCbTVYd9fs?autoplay=1&mute=1&t=0m0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="top-jumbo__info-container">
+                <div class="top-jumbo__info">
+                    <div class="top-jumbo__title">
+                        Born to perform
+                    </div>
+                    <p class="top-jumbo__para">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ian Reprehenderit molestias velit vitae. Ipsam deleniti unde ratione, quod recusandae qui reprehenderit. Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+          </div>
+      </section>
+
+    <section class="intro">
+        <div class="intro-container">
+            <div class="intro-logo">
+                <div class="intro-logo__img" style="background: url(https://i.postimg.cc/r8cg6rq0/3.jpg);">
+                </div>
+            </div>
+            <div class="intro-info">
+                <div class="intro-info__container">
+                    <div class="intro-info__title">
+                        Air Flow
+                    </div>
+                    <p class="intro-info__description">
+                        Plastic surgery in Phoenix can be life-changing, whether it’s cosmetic or reconstructive. Our gifted plastic surgeons at Regency Specialties artistically and skillfully address plastic surgery in all areas — from breasts to body contouring, to facelifts to reconstruction after illness or trauma.
+                    </p>
+                    <div class="line-decor"></div>
+                    <ul class="intro-info__links">
+                        <li><a href="">Gloves</a></li>
+                        <li><a href="">Hand Wraps</a></li>
+                        <li><a href="">Heavy Bags</a></li>
+                        <li><a href="">More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbo-info">
+        <div class="jumbo-info__bgimg" style="background:linear-gradient(to right, rgba(0,0,0,0) 10%, rgba(0,0,0,1)), url('https://i.postimg.cc/L9TxL4QC/SANCHEZ-49-1.jpg')"></div>
+        <div class="jumbo-info__description--container">
+            <h1 class="jumbo-info__title">AIRFLOW</h1>
+            <p class="jumbo-info__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in dolor, optio earum nulla aspernatur amet illo possimus voluptatibus rerum debitis accusantium velit odit sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, rem.
+            </p>
+            <div class="line-decor-white"></div>
+            <a class="jumbo-info__description--btn" href="">Learn more</a>
+            
+        </div>
+    </section>
+
+
+   
+    <!-- <div class="new-collections">
+        <h1 class="new-collections-title">NEW COLLECTIONS</h1>
+        <div class="item-container">
+            <div class="new-collections-item item1">
+                <div class="new-collectinos-item-info">
+                    <h1>Title</h1>
+                    <h3>Description</h3>
+                </div>
+            </div>
+            <div class="new-collections-item item2">
+                <div class="new-collectinos-item-info">
+                    <h1>Title</h1>
+                    <h3>Description</h3>
+                </div>
+            </div>
+            <div class="new-collections-item item2">
+                <div class="new-collectinos-item-info">
+                    <h1>Title</h1>
+                    <h3>Description</h3>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
     
-        <i class="fas fa-bars side-trigger"></i>
-    </nav>
-</header>
 
-<div class="side-menu">
-    <img class="logo" src="/images/logoowl.png" width="70px" height="60px" alt="logo">
-    <div class="side-menu-links">
-        <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="/pages/about.html"><li>About</li></a>
-            <a href="/pages/books.html"><li>Books</li></a>
-            <a href=""><li>Videos</li></a>
-            <a href=""><li>Lectures</li></a>
-            <a href="/pages/contact.html"><li>Contact</li></a>
-        </ul>
-    </div>
-</div>
-
-
-
-<div class="page-container">
-    <div class="intro">
-        <h1>Discover Books</h1>
-    </div>
-<div class="top-card">
-    <div class="top-card-info">
-        <h1>Visit Library</h1>
-        <p>Sign up to receive an email alert every time we update any of our material.</p>
-        <a href="#"><button>Sign up</button></a>
-    </div>
-    <div class="top-card-info-right">
-        <div class="info-right-container">
-                <h2>Lorem <span style="font-weight: bold;">ipsum dolor</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea voluptates neque omnis at doloribus nobis, earum incidunt.</p>
-        </div>
-    </div>
-</div>
-
-<!-- MOST POPULAR SECTION-->
-<div class="most-popular-info">
-    <h2>Most Popular</h2>
-    <a href="#">All <i class="fas fa-arrow-right"></i></a>
-</div>
-
-
-<div class="most-popular-section">
-    <div class="most-popular-selection">
-        <div class="popular-selection-card" style="background: url(/images/mucuslessdiet.jpg) no-repeat center; background-size: cover; object-fit: cover;"></div>
-        <div class="description">
-            <h3>Rational Fasting</h3>
-            <p>by Arnold Ehret</p>
-        </div>
-    </div>
-
-    <div class="most-popular-selection">
-        <div class="popular-selection-card" style="background: url(/images/chroniccons.jpg) no-repeat center; background-size: cover; "></div>
-        <div class="description">
-            <h3>The Definite Cure</h3>
-            <p>by Arnold Ehret</p>
-        </div>
-    </div>
-
-    <div class="most-popular-selection">
-        <div class="popular-selection-card" style="background: url(/images/ratfast.jpg) no-repeat center; background-size: cover; object-fit: cover;"></div>
-        <div class="description">
-            <h3>Rational Fasting</h3>
-            <p>by Arnold Ehret</p>
-        </div>
-    </div>
-
-    <div class="most-popular-selection">
-        <div class="popular-selection-card" style="background: url(/images/thrustomach.jpg) no-repeat center; background-size: cover; object-fit: cover;"></div>
-        <div class="description">
-            <h3>Tragedy of Nutrition</h3>
-            <p>by Arnold Ehret</p>
-        </div>
-    </div>
-
-    <div class="most-popular-selection">
-        <div class="popular-selection-card" style="background: url(/images/tavis.jpg) no-repeat center; background-size: cover; object-fit: cover;"></div>
-        <div class="description">
-            <h3>The Tavistock Institute</h3>
-            <p>by John Coleman</p>
-        </div>
-    </div>
-
-    <div class="most-popular-selection">
-        <div class="popular-selection-card" style="background: url(/images/psychalch.jpg) no-repeat center; background-size: cover; object-fit: cover;"></div>
-        <div class="description">
-            <h3>Psychology & Alchemy</h3>
-            <p>by Carl Jung</p>
-        </div>
-    </div>
-</div>
-               
-
-
-<!--FAVORITE AUTHORS-->
-<div class="most-popular-info">
-    <h2>Authors to follow</h2>
-    <a href="#">All <i class="fas fa-arrow-right"></i></a>
-</div>
-<div class="author-container">
-    <div class="author-card">
-        <img src="/images/petersonjor.jpg" alt="">
-        <div class="author-info">
-            <h3>Jordan Peterson</h3>
-            <p><i class="fas fa-book"></i> number of books</p>
-        </div>
-    </div>
-    <div class="author-card">
-        <img src="/images/sebi.jpg" alt="">
-        <div class="author-info">
-            <h3>Dr Sebi</h3>
-            <p>number of books</p>
-        </div>
-    </div>
-    <div class="author-card">
-        <img src="/images/kilin.jpeg" alt="">
-        <div class="author-info">
-            <h3>Kilindi Iyi</h3>
-            <p>number of books</p>
-        </div>
-    </div>
-    <div class="author-card">
-        <img src="/images/mckenna.jpg" alt="">
-        <div class="author-info">
-            <h3>Terence Mckenna</h3>
-            <p>number of books</p>
-        </div>
-    </div>
-    <div class="author-card">
-        <img src="/images/alanwatts.jpg" alt="">
-        <div class="author-info">
-            <h3>Alan Wats</h3>
-            <p>number of books</p>
-        </div>
-    </div>
-    <div class="author-card">
-        <img src="/images/jeung.jpg" alt="">
-        <div class="author-info">
-            <h3>Carl Jung</h3>
-            <p>number of books</p>
-        </div>
-    </div>
-</div>
-
-
-<!-- AUDIO SECTION-->
-<div class="most-popular-info">
-    <h2>Audiobooks & Lectures</h2>
-</div>
-
-<div class="container">
-    <ul class="menu">
-        <li class="list1">
-            <h3>Intro and Mindset</h3>
-            <i class="fas fa-angle-right"></i>
-            <ul class="submenu-list-1">
-                <li>submenu options 1 <i class="far fa-play-circle"></i></li>
-                <li>submenu options 1</li>
-                <li>submenu options 1</li>
-            </ul>
-        </li>
-        <li class="list1">
-            <h3>Intro and Mindset</h3>
-            <i class="fas fa-angle-right"></i>
-            <ul class="submenu-list-1">
-                <li>submenu options 2</li>
-                <li>submenu options 2</li>
-                <li>submenu options 2</li>
-            </ul>
-        </li>
-        <li class="list1">
-            <h3>Intro and Mindset</h3>
-            <i class="fas fa-angle-right"></i>
-            <ul class="submenu-list-1">
-                <li>submenu options 3</li>
-                <li>submenu options 3</li>
-                <li>submenu options 3</li>
-            </ul>
-        </li>
-     </ul>
- </div>
-
-<!--End of home container-->
-</div>
-<!-- FOOTER -->
-<footer>
     
-    <ul><h2>Project</h2>
-        <li><a href="">Updates</a></li>
-        <li><a href="">License</a></li>
-        <li><a href="">Versions</a></li>
-        <li><a href="">Questions</a></li>
-        <li><a href="">More</a></li>
-    </ul>
-
-    <ul><h2>Icons</h2>
-        <li><a href="">Updates</a></li>
-        <li><a href="">License</a></li>
-        <li><a href="">Versions</a></li>
-        <li><a href="">Questions</a></li>
-    </ul>
-
-    <ul><h2>Support</h2>
-        <li><a href="">Updates</a></li>
-        <li><a href="">License</a></li>
-        <li><a href="">Versions</a></li>
-        <li><a href="">Questions</a></li>
-    </ul>
-
-    <ul><h2>Support</h2>
-        <li><a href="">Updates</a></li>
-        <li><a href="">License</a></li>
-        <li><a href="">Versions</a></li>
-        <li><a href="">Questions</a></li>
-    </ul>
-    
-</footer>
-
-
-</div>
-
-
-
 
 
 <script src="javascript.js"></script>
