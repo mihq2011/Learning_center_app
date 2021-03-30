@@ -1,11 +1,15 @@
-
+header {
+    position: ;
+}
  
  .header-container {
    width: 100%;
-   background-color: white;
+   background-color: var(--dark-text);
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
+   position: fixed;
+   z-index: 999;
  }
 
  .header-logo {
@@ -21,14 +25,14 @@
    margin-right: 20px;
    list-style:none;
    text-decoration: none;
-   color: var(--dark-text);
+   color: var(--light-text);
    transition: color .2s ease-in-out;
    font-size: 20px;
    font-weight: bold;
  }
 
  .header-container nav a:hover {
-     color: var(--light-text);
+     color: white;
  }
 
  .top-jumbo {
@@ -138,7 +142,7 @@ section.intro {
 }
 
 .intro-info__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 40px;
@@ -179,6 +183,92 @@ ul.intro-info__links a:hover {
     color: var(--light-text);
 }
 
+/* INSTAGRAM SECTION */
+section.instagram {
+    height: 100%;
+    width: 100%;
+}
+
+.ig-list__container {
+    width: 100%;
+    max-width: 1900px;
+    height: 100%;
+    display: flex;
+    margin: 150px 0;
+}
+
+.ig-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.ig-list li {
+    width: 20%;
+    height: 350px;
+    position: relative;
+}
+
+.ig-list-item {
+    width: 100%;
+    height: 100%;
+    background-size: 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.ig-list .ig-list-item:hover {
+    opacity: 0.5;
+}
+
+.ig-list .fa-instagram {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.ig-list li:hover .fa-instagram {
+    opacity: 1;
+}
+
+.ig-list-item--middle {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-size: 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.ig-list-item--middle .fa-instagram {
+    opacity: 1 !important;
+    position: static;
+    
+}
+
+.ig-list-item--middle p:first-of-type {
+    margin: 40px 0;
+    font-weight: 500;
+}
+
+.ig-list-item--middle span {
+    border: solid 2px white;
+    padding: 10px 25px;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+/* JUMBOINFO SECTION */
 .jumbo-info {
     width: 100%;
     height: 100vh;
@@ -198,17 +288,16 @@ ul.intro-info__links a:hover {
     position: absolute;
     color: var(--light-text);
     width: 500px;
-    height: 100%;
     right: 100px;
     top: 100px;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    font-weight: 700;
 }
 
 .jumbo-info__title {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2rem;
     letter-spacing: 2px;
     margin-bottom: 30px;
 }
@@ -260,19 +349,188 @@ ul.intro-info__links a:hover {
     width: 120px;
 }
 
+.news-articles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
+.news-articles__title {
+    width: 100%;
+    margin: 100px auto 0px auto;
+}
 
+.news-articles__title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
 
+.news-articles__title::after {
+    content: "";
+    border-bottom: solid 0.5rem var(--light-text);
+    width: 200px;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0px auto;
+}
 
+.news-articles__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto;
+}
 
+.news-articles__left {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
 
+.news-articles__left--container {
+    display: flex;
+    border: solid 1px var(--light-text);
+    margin: 10px 0;
+}
 
+.news-articles__left--image {
+   width: 240px;
+   height: 350px;
+}
 
+.news-articles__left--image img {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    
+}
 
- 
+.news-articles__left--info {
+    margin: auto;
+    width: 350px;
+    color: var(--dark-text);
+    font-weight: 500;
+    padding: 10px;
+}
 
+.news-articles__left--info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
+.news-articles__left--info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
 
+.news-articles__left--info a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--gold-logo);
+}
+
+.news-articles__right {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
+
+.news-articles__right--container {
+    border: solid 1px var(--light-text);
+    margin: 10px;
+}
+
+.news-articles__right-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.news-articles__right-image-container img {
+    width: 100%;
+    height: 496px;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.news-articles__right--info {
+    margin: 20px;
+    width: 400px;
+    color: var(--dark-text);
+    font-weight: 500;
+    padding: 10px;
+}
+
+.news-articles__right--info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.news-articles__right--info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.news-articles__right--info a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--gold-logo);
+}
+
+.airpocket-display {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.airpocket-display__bg {
+    height: 100vh;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+
+.airpocket-display__infosquare {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: var(--light-text);
+    color: var(--dark-text);
+    opacity: 0.8;
+    width: 500px;
+    padding: 40px;
+    font-weight: 700;
+}
+
+.airpocket-display__infosquare h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.airpocket-display__infosquare h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.airpocket-display__infosquare li::before {
+    content: '\2713\0020';
+    color: var(--gold-logo);
+    font-size: 1.5rem;
+    margin-right: 2px;
+}
+
+.airpocket-display__infosquare li {
+    margin-bottom: 20px;
+}
 
 .new-collections {
     max-width: 1000px;
@@ -286,9 +544,6 @@ ul.intro-info__links a:hover {
     font-size: 1.2rem;
     padding-bottom: 20px;
 }
-
-
-
 
 
 .item-container {
