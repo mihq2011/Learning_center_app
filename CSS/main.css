@@ -201,7 +201,7 @@ section.instagram {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color:black;
 }
 
 .ig-list li {
@@ -213,7 +213,7 @@ section.instagram {
 .ig-list-item {
     width: 100%;
     height: 100%;
-    background-size: 100% !important;
+    background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     transition: all 0.3s ease-in-out;
