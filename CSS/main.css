@@ -1145,9 +1145,22 @@ footer {
     height: 100%;
     width: 100%;
     padding: 10px 0px;
+    position: relative;
+}
+.footer-bottom::before {
+    content: "";
+    border-top: solid 1px var(--light-text);
+    height: 1px;
+    width: 100%;
+    position: absolute;
 }
 
 .footer-bottom__container {
     width: 100%;
-    padding: 10px 0px 10px 50px;
+    padding: 10px 0px 10px 0px;
+    color: var(--light-text);
+    font-size: 0.7rem;
+    padding: 50px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
 }
