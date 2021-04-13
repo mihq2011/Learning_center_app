@@ -1289,12 +1289,23 @@ section.instagram {
 }
 
 .collections-airpocket__product {
-    width: 33%;
-    
+    width: 30%;
+}
+
+.collections-airpocket__product:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .collections-airpocket__product img {
     width: 100%;
+}
+
+.collections-airpocket__product--info {
+    text-align: center;
+}
+
+.collections-airpocket__product-overlay {
+    display: none;
 }
 
 footer {
