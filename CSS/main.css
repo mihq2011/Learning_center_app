@@ -1286,15 +1286,15 @@ section.instagram {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .collections-airpocket__product {
     width: 30%;
+    margin: 10px;
+    position: relative;
 }
 
-.collections-airpocket__product:hover {
-    background: rgba(0, 0, 0, 0.7);
-}
 
 .collections-airpocket__product img {
     width: 100%;
@@ -1305,7 +1305,41 @@ section.instagram {
 }
 
 .collections-airpocket__product-overlay {
-    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    transition: all .2s ease-in;
+}
+
+.collections-airpocket__product:hover .collections-airpocket__product-overlay {
+    visibility: visible;
+    background: rgba(255, 255, 255, 0.8);
+} 
+
+
+.collections-airpocket__product-overlay a {
+    display: block;
+    color: black;
+    border: solid 1px black;
+    margin: 10px 0px;
+    padding: 7px;
+    text-align: center;
+    width: 60%;
+    font-weight: 900;
+}
+
+.collections-airpocket__product-overlay a:nth-of-type(2) {
+    background: black;
+    color: white;
+    
 }
 
 footer {
