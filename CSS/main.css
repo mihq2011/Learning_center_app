@@ -1,14 +1,4 @@
-/*KEYFFRAME ANIMATIONS */
-@keyframes drive {
-    0% {
-      transform: translateX(-200px);
-    }
-  
-    100% {
-      transform: translateX(1300px);
-    }
-  }
-  
+/*KEYFFRAME ANIMATIONS */  
   @keyframes jump {
     0%{top: -40;}
     50%{top: -100px;}
@@ -84,6 +74,7 @@
    position: fixed;
    top: 0;
    z-index: 999;
+   min-height: 70px;
  }
 
  .header-logo {
@@ -1264,10 +1255,33 @@ section.instagram {
     margin-bottom: 20px;
 }
 
+/* PRODUCT PAGE GALLERY */
 
+section.product-gallery {
+    width: 100%;
+    height: 100%;
+}
+
+.product-gallery__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 77px 0px 0px 0px;
+}
+
+.product-gallery__image {
+    width: 19.5%;
+
+}
+
+.product-gallery__image img {
+    width: 100%;
+}
+
+/* PRODUCT PAGE COLLECTIONS */
 .collections-airpocket {
     width: 100%;
     height: 100%;
+    margin: 50px 0px 100px 0px;
 }
 
 .collections-airpocket__title {
@@ -1301,7 +1315,18 @@ section.instagram {
 }
 
 .collections-airpocket__product--info {
-    text-align: center;
+    text-align: center;   
+}
+
+.collections-airpocket__product--info h2 {
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.collections-airpocket__product--info span {
+    color: var(--light-text);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
 }
 
 .collections-airpocket__product-overlay {
@@ -1342,6 +1367,49 @@ section.instagram {
     
 }
 
+/* PRODUCT PAGE DESCRIPTION */
+.product-page_info {
+    width: 100%;
+    height: 100%;
+}
+
+.product-page__description-container {
+    max-width: 750px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    color: var(--gray-text);
+    padding: 0px 30px 20px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-page__description-container h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--dark-text);
+    padding: 20px 0px 0px 0px;
+}
+
+/* DISPLAY IMAGES */
+section.display-images {
+    width: 100%;
+    height: 100%;
+}
+
+.display-images__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 0px auto 50px;
+    max-width: 1200px;
+}
+
+.display-image__collection img {
+    width: 100%;
+    
+}
+
+/* FOOTER */
 footer {
     width: 100%;
     height: 100%;
@@ -1361,6 +1429,10 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+}
+
+.footer-contactInfo {
+    padding: 10px 10px 0px 20px;
 }
 
 .footer-list .quick-links {
