@@ -202,8 +202,8 @@
 }
 
 .product-section__container .product {
-    width: 20%;
-    min-width: 200px;
+    width: 25%;
+    min-width: 300px;
     position: relative;
 }
 
@@ -289,7 +289,7 @@
 /* INTRO SECTIONS */
 section.intro {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .intro-container {
@@ -317,7 +317,7 @@ section.intro {
 .intro-info {
     display: inline-block;
     width: 40%;
-    height: 100%;
+    height: auto;
     position: relative;
     
 }
@@ -599,7 +599,7 @@ section.instagram {
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    
+    border-right: solid 1px var(--light-text);
 }
 
 .news-articles__left--info {
@@ -644,10 +644,10 @@ section.instagram {
 }
 
 .news-articles__right-image-container img {
-    width: 100%;
+    width: fit-content;
     height: 496px;
     background-size: cover !important;
-    background-position: center center !important;
+    background-position: center top !important;
     background-repeat: no-repeat !important;
 }
 
@@ -755,8 +755,17 @@ section.instagram {
  }
 
  .header-container nav a:hover {
-     color: white;
+    color: white;
  }
+
+ .header-container .mobile-nav {
+    display: none;
+ }
+
+.header-container .mobile-nav a {
+    font-size: 2rem;
+    padding: 18px 0px 18px 18px;
+}
 
  .top-jumbo {
     width: 100%;
@@ -818,11 +827,6 @@ section.instagram {
     padding: 10px;
 }
 
-section.intro {
-    width: 100%;
-    height: 100vh;
-}
-
 .intro-container {
     display: flex;
     max-width: 1400px;
@@ -839,7 +843,7 @@ section.intro {
 
 .intro-logo__img {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -848,7 +852,7 @@ section.intro {
 .intro-info {
     display: inline-block;
     width: 40%;
-    height: 100%;
+    height: auto;
     position: relative;
     
 }
@@ -1424,7 +1428,7 @@ section.contact-page__form {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    padding: 100px 0px 60px 0px;
+    padding: 100px 10px 60px 10px;
     
 }
 
@@ -1566,6 +1570,75 @@ form.contact-page__contact-form {
 }
 
 /* CONTACT PAGE */
+section.about-page__section {
+    width: 100%;
+    height: 100%;
+}
+
+.about-page__jumbo {
+    height: 400px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+    filter: brightness(60%);
+}
+
+.about-page__jumbo-info {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.about-page__jumbo-info h1 {
+    color: var(--gold-logo);
+    padding: 0px 0px 10px 0px;
+}
+
+.about-page__jumbo-info p {
+    line-height: 1.5;
+}
+
+.about-page__jumbo-values {
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.about-page__jumbo-values--container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.about-page__jumbo-values--container h1 {
+    color: var(--gold-logo);
+    padding: 0px 0px 10px 0px;
+}
+
+.about-page__jumbo-values--container p {
+    line-height: 1.5;
+}
+
+.about-page__jumbo-values--container p::after {
+    content: "";
+    background-color: var(--gold-logo);
+    width: 75px;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+.about-page__jumbo-values--container h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0px;
+    color: var(--dark-text);
+}
+
+.about-page__jumbo-values--container .value-description {
+    text-align: center;
+    color: var(--light-text);
+}
 
 
 /* FOOTER */
@@ -1591,11 +1664,11 @@ footer {
 }
 
 .footer-contactInfo {
-    padding: 10px 10px 0px 20px;
+    padding: 10px 10px 0px 50px;
 }
 
 .footer-list .quick-links {
-    padding: 20px 20px 10px 50px;
+    padding: 20px 20px 10px 0px;
 }
 
 .footer-list h1 {
@@ -1641,8 +1714,12 @@ footer {
     transition: all 0.2s ease-in-out;
 }
 
+.newsletter input[type=text]::placeholder {
+    color: var(--light-text);
+}
+
 .newsletter input[type=text]:focus {
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px var(--light-text);
 }
 
 .newsletter input[type=submit] {
@@ -1675,4 +1752,236 @@ footer {
     padding: 50px 0px 20px 0px;
     display: flex;
     justify-content: center;
+}
+
+/* MEDIA QUERIES DESKTOP */
+
+@media only screen and (max-width: 769px) {
+    .header-container .desktop-nav {
+        display: none;
+    }
+
+    .header-container .mobile-nav {
+        display: flex;
+    }
+
+    .top-jumbo__info {
+        bottom: 50px;
+        left: 20px;
+    }
+
+    .top-jumbo__para {
+        width: 500px;
+    }
+
+    .product-section__container .product {
+        width: 50%;
+    }
+    .intro-info {
+    width: 50%;
+    }
+
+    .intro-info__container {    
+    padding: 15px 5px 55px 20px;
+    
+    }
+    
+    .ig-list-item--middle-li {
+        display: none;
+    }
+    .ig-list li {
+        width: 25%;
+    }
+
+    .logo__img {
+        height: 75vh;
+    }
+
+    section.intro {
+        height: 100%;
+    }
+
+    .intro-logo__img {
+        height: 70vh;
+    }
+
+    .news-articles__container {
+        display: block;
+    }
+
+    .news-articles__left, .news-articles__right {
+        width: 100%;
+        display: block;
+    }
+
+    .contact-page__form-right-container {
+        padding: 0px 20px 0px 10px;
+    }
+
+    .contact-page__form-container::before {
+        left: 57%;
+    }
+
+    .contact-page__form-left {
+        width: 100%;
+        display: block;
+    }
+
+    .footer-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-list .quick-links {
+        padding-left: 50px;
+    }
+}
+
+/* MEDIA QUERIES MOBILE */
+@media only screen and (max-width: 576px) {
+    .top-jumbo__title {
+        font-size: 1.5rem;
+    }
+
+    .top-jumbo__para {
+        font-size: 1rem;
+    }
+
+    .intro-container {
+        display: block;
+    }
+
+    .intro-logo {
+        width: 100%;
+        display: block;
+    }
+
+    .intro-logo__img {
+        height: 50vh;
+    }
+
+    .intro-info {
+        width: 100%;
+        height: 520px;
+        padding-top: 20px;
+    }
+
+    .jumbo-info__description--container {
+        right: 0;
+        width: 100%;
+    }
+
+    .ig-list li {
+        width: 33%;
+    }
+
+    .ig-list li:nth-of-type(4) {
+        display: none;
+    }
+
+    .news-articles__right--info {
+        width: 90%;
+    }
+
+    .airpocket-display__infosquare {
+        top: 5%;
+        left: 20px;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .jumbo-info__description--container {
+        right: 0;
+        top: 25%;
+    }
+
+    .news-articles__title h1 {
+        font-size: 1.5rem;
+    }
+
+    .news-articles__title {
+        margin-top: 0px;
+    }
+
+    .logo-intro {
+        display: block;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .top-jumbo__para {
+        width: 90%;
+    }
+
+    .product-gallery__image {
+        width: 32.5%;
+    }
+
+    .product-gallery__image:nth-of-type(1), .product-gallery__image:nth-of-type(2) {
+        display: none;
+    }
+
+    .product-gallery__image img {
+        height: 180px;
+    }
+
+    .collections-airpocket__product {
+        width: 80%;
+    }
+
+    .product-page__description-container {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .about-page__jumbo-info {
+        width: 90%;
+    }
+
+    .about-page__jumbo-values--container {
+        width: 90%;
+    }
+
+    form.contact-page__contact-form {
+        padding-right:5px;
+    }
+
+    .contact-page__form-container {
+        display: block;
+    }
+
+    .contact-page__form-right {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-page__form-right-container {
+        padding: 30px 10px 0px 10px;
+    }
+
+    .contact-page__form-container::before {
+        left: 0;
+    }
+
+    .footer-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-contactInfo {
+        padding: 10px 10px 0px 20px;
+    }
+
+    .footer-list .quick-links {
+        padding: 20px 10px 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .airpocket-display__infosquare {
+        top: 3%;
+        left: 8px;
+        width: 95%;
+        padding: 10px;
+        margin: 0 auto;
+    }
 }
